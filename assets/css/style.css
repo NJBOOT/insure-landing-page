@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-family: "Karla", sans-serif;
   font-weight: 400;
   font-size: 1.111vw;
@@ -24,44 +25,44 @@ h1 {
 }
 
 #header-wrapper {
-    display: flex;
-    width: 100vw;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.4%;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4%;
 }
 
 .header-logo {
-    margin-left: 10%
+  margin-left: 10%;
 }
 
 .header-items {
-    display: flex;
-    flex: 0 0 50%;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 9%;
-    color: hsl(273, 4%, 51%);
+  display: inline-flex;
+  flex: 0 0 50%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 9%;
+  color: hsl(273, 4%, 51%);
 }
 
 .header-item {
-   flex: 0 0 auto;
-   margin: 0 2%;
-   font-size: 1.111vw;
+  flex: 0 1 auto;
+  margin: 0 2%;
+  font-size: 1.111vw;
 }
 
 .header-item-btn {
-    flex: 0 0 25%;
+  flex: 0 1 20%;
 }
 #header-plan-btn {
-    padding: 5% 10%;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: none;
-    border: 2px solid hsl(256, 26%, 20%);
-    color: hsl(256, 26%, 20%);
-    font-size: 1rem;
-    letter-spacing: .05rem;
+  padding: 5% 10%;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: 2px solid hsl(256, 26%, 20%);
+  color: hsl(256, 26%, 20%);
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
 }
 
 #content-wrapper {
@@ -119,26 +120,38 @@ h1 {
   position: relative;
   z-index: 1;
 }
- .title {
-   font-size: 4.35rem;
-   line-height: 4rem;
- }
+.title {
+  font-size: 4.35rem;
+  line-height: 4rem;
+}
 
- #top-text-col {
-   padding: 6% 0 0 1.2%;
- }
+#top-text-col {
+  padding: 6% 0 0 1.2%;
+  position: relative;
+}
 
- #top-body-text-wrapper {
-   margin: 5% 0;
-   width: 104%;
-   line-height: 1.5rem;
- }
+#top-text-col::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27%;
+  border-top: 1px solid white;
+  margin-left: 3%;
+}
 
- /* #content-top-btn {
-  background-color: #ffffff;
+#top-body-text-wrapper {
+  margin: 5% 0;
+  width: 104%;
+  line-height: 1.5rem;
+}
+
+#content-top-btn {
+  background: none;
   box-shadow: none;
-  border: 2px solid hsl(256, 26%, 20%);
-  color: hsl(256, 26%, 20%);
-  font-size: 1rem;
-  letter-spacing: .05rem;
- } */
+  border: 2px solid white;
+  color: #ffffff;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  padding: 2% 6%;
+}
