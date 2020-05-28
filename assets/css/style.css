@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-body {
+html, body {
   font-family: "Karla", sans-serif;
   font-weight: 400;
   font-size: 1.111vw;
@@ -78,7 +78,24 @@ h1 {
 #content-top {
   background-color: hsl(256, 26%, 20%);
   max-height: 600px;
-  color: #ffffff
+  color: #ffffff;
+  position: relative;
+}
+
+.top-right-bg > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 26.5%;
+}
+
+.bottom-left-bg > img {
+  position: absolute;
+  top: 73%;
+  left: 0;
+  z-index: 100;
+  width: 13%;
 }
 
 .top-row {
@@ -99,14 +116,22 @@ h1 {
 .content-img {
   max-width: 100%;
   height: auto;
+  position: relative;
+  z-index: 1;
 }
- .title-wrapper {
-   font-size: 2vw;
-   line-height: 4vw;
+ .title {
+   font-size: 4.35rem;
+   line-height: 4rem;
  }
 
  #top-text-col {
    padding: 6% 0 0 1.2%;
+ }
+
+ #top-body-text-wrapper {
+   margin: 5% 0;
+   width: 104%;
+   line-height: 1.5rem;
  }
 
  /* #content-top-btn {
