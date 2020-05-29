@@ -74,15 +74,18 @@ h1 {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
 }
 
 #content-top {
   background-color: hsl(256, 26%, 20%);
   max-height: 600px;
   color: #ffffff;
-  position: relative;
 }
 
+#content-img-top {
+  transform: translateY(15.2%);
+}
 .top-right-bg > img {
   position: absolute;
   top: 0;
@@ -103,11 +106,11 @@ h1 {
   display: flex;
   justify-content: center;
   width: 80%;
-  margin: 7% 0 0 0;
 }
 
 .top-col {
-  flex: 0 1 50%;
+  flex: 1 1 50%;
+  position: relative;
 }
 
 #top-img-col {
@@ -120,13 +123,19 @@ h1 {
   position: relative;
   z-index: 1;
 }
+
+#title-top-wrapper {
+  margin: 12% 0 0 0;
+}
+
 .title {
   font-size: 4.35rem;
   line-height: 4rem;
 }
 
 #top-text-col {
-  padding: 6% 0 0 1.2%;
+  padding: 0 0 0 1.2%;
+  margin: 8.75% 0 0 0;
   position: relative;
 }
 
@@ -154,4 +163,15 @@ h1 {
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
   padding: 2% 6%;
+}
+
+#content-mid {
+  display: flex;
+  flex-flow: column nowrap;
+  max-height: 780px;
+}
+
+#mid-row-1 {
+  display: flex;
+  margin-top: 20%;
 }
