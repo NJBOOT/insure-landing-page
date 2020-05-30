@@ -96,8 +96,17 @@ h1, h4 {
   left: 11.1%;
   width: 10.417vw;
   border-top: 1px solid white;
-  margin:0 0 10% 0;
 }
+
+/* #top-text-col::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10.417vw;
+  border-top: 1px solid white;
+  margin-left: 3%;
+} */
 
 #content-img-top {
   transform: translateY(15.2%);
@@ -155,16 +164,6 @@ h1, h4 {
   margin: 8.75% 0 0 0;
   position: relative;
 }
-
-/* #top-text-col::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10.417vw;
-  border-top: 1px solid white;
-  margin-left: 3%;
-} */
 
 #top-body-text-wrapper {
   margin: 5% 0;
