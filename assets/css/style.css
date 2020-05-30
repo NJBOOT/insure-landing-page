@@ -393,7 +393,7 @@ h1, h4 {
   margin-bottom: 8.5%;
 }
 
-.col-list-item:hover {
+.col-list-item > span:hover {
   cursor: pointer;
   text-decoration: underline;
   text-decoration-color: hsl(270, 9%, 17%);
