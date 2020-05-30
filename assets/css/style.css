@@ -19,7 +19,7 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-h1 {
+h1, h4 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
 }
@@ -86,6 +86,17 @@ h1 {
   width: 100vw;
   max-height: 600px;
   color: #ffffff;
+  position: relative;
+}
+
+#content-top-row::before {
+  content: "";
+  position: absolute;
+  top: 16.5%;
+  left: 11.1%;
+  width: 10.417vw;
+  border-top: 1px solid white;
+  margin:0 0 10% 0;
 }
 
 #content-img-top {
@@ -109,7 +120,7 @@ h1 {
 
 .top-row {
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
   width: 80%;
 }
 
@@ -145,15 +156,15 @@ h1 {
   position: relative;
 }
 
-#top-text-col::before {
+/* #top-text-col::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 27%;
+  width: 10.417vw;
   border-top: 1px solid white;
   margin-left: 3%;
-}
+} */
 
 #top-body-text-wrapper {
   margin: 5% 0;
@@ -174,10 +185,89 @@ h1 {
 #content-mid {
   display: flex;
   flex-flow: column nowrap;
-  max-height: 780px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+}
+
+.middle-wrapper {
+  width: 80%;
+  margin-top: 20.75%;
+  position: relative;
+  padding: 0 0 0 1.1%;
 }
 
 #mid-row-1 {
   display: flex;
-  margin-top: 20%;
+  width: 100%;
+}
+
+
+
+#mid-title-col::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.5%;
+  width: 10.417vw;
+  border-top: 1px solid hsl(273, 4%, 51%);
+}
+
+#mid-title-col {
+  flex: 1 0 auto;
+  margin: 5% 0 8% 0;
+  color: hsl(270, 9%, 17%);
+}
+
+#mid-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 2% 0;
+}
+
+.mid-col {
+  flex: 0 1 33.3333%;
+}
+
+.mid-col-header-text {
+  font-size: 2vw;
+  margin: 8% 0 5.75% 0;
+}
+
+.mid-col-text-area {
+  color: hsl(273, 4%, 51%);
+  line-height: 2vw;
+}
+
+#content-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#bot-row-1 {
+  width: 80%;
+  display: flex;
+  color: #ffffff;
+  background-color: hsl(256, 26%, 20%);
+  padding: 5% 5%;
+  margin: 10.65% 0;
+  position: relative;
+}
+
+.content-bottom-bg > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 41%;
+}
+
+.col-bot-row {
+  flex: 1 0 50%;
+}
+
+.header-col-bot-text {
+  font-size: 3.9vw;
 }
