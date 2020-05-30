@@ -54,6 +54,11 @@ h1, h4 {
   font-size: 1.111vw;
 }
 
+.header-item:hover {
+  cursor: pointer;
+  color: hsl(270, 9%, 17%);
+}
+
 .header-item-btn {
   margin-right: 0%;
 }
@@ -66,6 +71,13 @@ h1, h4 {
   color: hsl(256, 26%, 20%);
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
+}
+
+#header-plan-btn:hover {
+  color: #ffffff;
+  border: 2px solid hsl(270, 9%, 17%);
+  background-color: hsl(270, 9%, 17%);
+  cursor: pointer;
 }
 
 #content-wrapper {
@@ -181,6 +193,12 @@ h1, h4 {
   width: 10.417vw;
 }
 
+#content-top-btn:hover, .btn-col-bot-area:hover {
+  background-color: #ffffff;
+  color:hsl(256, 26%, 20%);
+  cursor: pointer;
+}
+
 #content-mid {
   display: flex;
   flex-flow: column nowrap;
@@ -251,7 +269,7 @@ h1, h4 {
   display: flex;
   color: #ffffff;
   background-color: hsl(256, 26%, 20%);
-  padding: 5.25%;
+  padding: 4.75% 5.25%;
   margin: 10.65% 0;
   position: relative;
 }
@@ -260,7 +278,7 @@ h1, h4 {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 42%;
+  width: 37.5%;
 }
 
 .col-bot-row {
@@ -269,6 +287,7 @@ h1, h4 {
 
 .header-col-bot-text {
   font-size: 3.9vw;
+  line-height: 4vw;
 }
 
 .btn-col-bot {
@@ -302,7 +321,7 @@ h1, h4 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 35%;
+  width: 38%;
 }
 
 .footer-row {
@@ -327,14 +346,25 @@ h1, h4 {
   align-items: center;
 }
 .footer-social-icons {
-  display: flex;
-  width: 13%;
+  flex: 0 1 auto;
+  display: inline-flex;
+  width: 150px;
   justify-content: space-between;
 }
 
 .footer-social-icon {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+
+.footer-social-icon:hover {
+  cursor: pointer;
+}
+
+.footer-social-icon > svg:hover {
+  fill: hsl(270, 9%, 17%);
 }
 
 .footer-row-2-wrapper {
@@ -347,17 +377,24 @@ h1, h4 {
   flex: 0 1 25%;
   text-transform: uppercase;
   color: hsl(256, 26%, 20%);
-  letter-spacing: .15rem;
+  letter-spacing: .1rem;
   font-size: .8rem;
-  line-height: 2rem;
+  line-height: 1.75rem;
   font-weight: 700;
 }
 
 .col-top-list-item {
   color: hsl(273, 4%, 51%);
-  margin-bottom: 5%;
+  margin-bottom: 8.5%;
+}
+
+.col-list-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: hsl(270, 9%, 17%);
 }
 
 #footer-row-3 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
