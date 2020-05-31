@@ -214,6 +214,61 @@
       </div>
     </div>
   </div>
+  <div class="mobile-container">
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </div>
+      <div class="mobile-drop-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="none" fill-rule="evenodd"><path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z"/><g fill="#2C2830"><path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z"/></g></g></svg>
+        <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="none" fill-rule="evenodd"><path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z"/><g fill="#2C2830"><path d="M10.873 9.563l11.314 11.314-1.06 1.06L9.813 10.623z"/><path d="M9.813 20.877L21.127 9.563l1.06 1.06-11.314 11.314z"/></g></g></svg>
+      </div>
+    </div>
+    <div class="mobile-drop-wrapper hidden">
+      <div class="mobile-drop">
+        <div class="droprow">
+          <p>How we work</p>
+        </div>
+        <div class="droprow">
+          <p>Blog</p>
+        </div>
+        <div class="droprow">
+          <p>Account</p>
+        </div>
+        <div class="droprow drop-row-button">
+          <button>View Plans</button>
+        </div>
+        <div class="drop-bg">
+          <img src="./assets/images/bg-pattern-mobile-nav.svg" alt="background">
+        </div>
+      </div>
+    </div>
+    <div class="mobile-body">
+      <div class="mobile-body-section section-1">
+        <img src="./assets/images/image-intro-mobile.jpg" alt="" class="mob-top-img">
+      </div>
+      <div class="mobile-body-section section-2">2</div>
+      <div class="mobile-body-section section-3">3</div>
+      <div class="mobile-body-section section-4">4</div>
+    </div>
+
+  </div>
+  <script>
+    let hamburger = document.querySelectorAll('.mobile-drop-icon > svg')[0]
+    let close = document.querySelectorAll('.mobile-drop-icon > svg')[1]
+    let dropdown = document.querySelectorAll('.mobile-drop-wrapper')[0]
+    
+    hamburger.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle("hidden");
+      close.classList.toggle("hidden");
+      dropdown.classList.toggle("hidden");
+    })
+    close.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle("hidden");
+      hamburger.classList.toggle("hidden");
+      dropdown.classList.toggle("hidden");
+    })
+  </script>
 </body>
 </html>
   
